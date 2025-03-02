@@ -1,8 +1,8 @@
 package CambioDolar;
 
 public class ConversorMoeda {
-	Double dollarPrice;
-	Double dollarsBought;
+	private double dollarPrice;
+	private double dollarsBought;
 	
 
 	public ConversorMoeda(double dollarPrice, double dollarsBought) {
