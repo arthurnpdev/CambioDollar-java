@@ -1,0 +1,28 @@
+package CambioDolar;
+
+public class ConversorMoeda {
+	Double dollarPrice;
+	Double dollarsBought;
+	
+
+	public ConversorMoeda(double dollarPrice, double dollarsBought) {
+		this.dollarPrice = dollarPrice;
+		this.dollarsBought = dollarsBought;
+	}
+	
+	public double dollars() {
+		return dollarPrice * dollarsBought;
+	}
+	
+	public double impost() {
+		return dollars() * 0.06;
+	}
+	
+	public double realValue() {
+		return dollars() + impost();
+	}
+	
+	public void showRealValue() {
+		System.out.println("Valor a ser pago em reais = " + realValue());
+	}
+}
