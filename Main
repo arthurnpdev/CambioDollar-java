@@ -1,0 +1,19 @@
+package CambioDolar;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Qual o preço do dolar? ");
+		Double dollarPrice = scanner.nextDouble();
+		
+		System.out.println("Quantos dólares serão comprados? ");
+		Double dollarsBought = scanner.nextDouble();
+		
+		ConversorMoeda conversorMoeda = new ConversorMoeda(dollarPrice, dollarsBought);
+		
+		conversorMoeda.showRealValue();
+
+	}
+
+}
